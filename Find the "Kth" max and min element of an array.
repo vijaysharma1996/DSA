@@ -1,0 +1,19 @@
+//Find the "Kth" max and min element of an array.
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[4]={1,2,3,-4};
+	int pos;
+	cout<<"Enter the kth position"<<endl;
+	cin>>pos;
+	int min=arr[0];
+	for(int i=0;i<4;i++)
+        { 
+           if(arr[i]<min)
+            min=arr[i];
+        } 
+	cout<<"Kth- "<<arr[pos-1]<<endl;
+	cout<<"min- "<<min;
+return 0;
+}
